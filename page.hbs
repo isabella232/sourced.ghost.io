@@ -1,0 +1,11 @@
+{{!--
+    A page template for static pages. Read more about it in https://themes.ghost.org/docs/templates
+--}}
+
+{{!< default}}
+
+<div class="post-feed row">
+    {{#foreach posts}}
+        {{> "post-card"}}
+    {{/foreach}}
+</div>

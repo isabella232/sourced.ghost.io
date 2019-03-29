@@ -1,0 +1,33 @@
+<article class="post-card {{post_class}}{{#unless feature_image}} no-image{{/unless}} col-sm-6 mt-4 mb-sm-0">
+    <article class="card h-100">
+        <a class="post-card-image-link {{#has tag="machine-learning-on-code"}}yellow{{/has}}" href="{{url}}">
+            <div class="post-card-image" {{#if feature_image}}style="background-image: url({{feature_image}}){{/if}}"></div>
+        </a>
+
+        <div class="post-card-content card-body p-5 d-flex flex-column {{#if featured}}offset-sm-3{{/if}}">
+            <a class="post-card-content-link" href="{{url}}">
+                <header class="post-card-header">
+                        <span class="post-card-tags card-intro">{{primary_tag.name}}</span>
+                    <h3 class="post-card-title text-dark mt-2 {{#if featured}}col-sm-10 pl-0{{/if}}">{{title}}</h3>
+                </header>
+                <section class="post-card-excerpt">
+                    <p class="text-medium">{{excerpt words="33"}}</p>
+                </section>
+            </a>
+            <footer class="post-card-meta d-flex justify-content-between align-items-center align-self-end mt-auto w-100">
+
+                <p class="author-list">
+                    {{#foreach authors}}
+                            {{#if profile_image}}
+                                <a href="{{url}}" class="static-avatar"><img class="author-profile-image mr-2" src="{{profile_image}}" alt="{{name}}" /></a>
+                            {{/if}}
+                            <span class="author-name">By {{name}}</span>
+                    {{/foreach}}
+                </p>
+
+                <span class="reading-time">{{reading_time}}</span>
+
+            </footer>
+        </div>
+    </article>
+</article>

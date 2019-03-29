@@ -1,0 +1,12 @@
+{{#get "posts" filter="featured:true" limit="all" as |featured|}}
+    {{#foreach featured}}
+        {{> "post-single"}}
+    {{/foreach}}
+{{/get}}
+{{#foreach posts}}
+    {{^if featured}}
+        {{> "post-single"}}
+    {{/if}}
+{{/foreach}}
+
+{{pagination}}

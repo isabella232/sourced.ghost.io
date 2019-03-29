@@ -1,0 +1,33 @@
+<header class="header pb-5">
+    <div class="container">
+        {{> "core/site-header"}}
+
+        <div class="container text-center">
+            <div class="blog-title">
+                {{#is "home"}}
+                    <h1 class="title pt-5">
+                        {{@blog.title}}
+                    </h1>
+                {{else}}
+                    <h2 class="mt-5">
+                        <a class="title text-left pt-5 pb-2 text-white" href="{{@blog.url}}" title="{{@blog.title}}">{{@blog.title}}</a>
+                    </h2>
+                {{/is}}
+            </div>
+
+            <ul class="nav nav-pills d-flex justify-content-center">
+                {{#get 'tags' limit='all' include='count.posts' order='count.posts desc'}}
+                    {{#foreach tags}}
+                        <li class="nav-item">
+                            <a class="nav-link" href='{{url}}'>
+                                {{ name }} <small>({{ count.posts }})</small>
+                            </a>
+                        </li>
+                    {{/foreach}}
+                {{/get}}
+            </ul>
+
+        </div>
+
+    </div>
+</header>

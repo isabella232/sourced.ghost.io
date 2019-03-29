@@ -1,0 +1,45 @@
+{{!--
+    This is the template for a single post, which also extends default.hbs. Read more about it in https://themes.ghost.org/docs/templates
+--}}
+
+{{!< default}}
+
+{{#post}}
+
+    <article class="{{post_class}}">
+        <header class="post-header text-center col-sm-8 offset-sm-2 py-5 my-5">
+            <div class="post-tags mb-3">
+                {{#primary_tag}}
+                    <a href="{{url}}">{{name}}</a></div>
+                {{/primary_tag}}
+            <h1 class="post-title">{{title}}</h1>
+            <section class="post-meta">
+                By {{author}} /
+                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
+                    {{date format="DD MMMM YYYY"}}
+                </time>
+            </section>
+        </header>
+        <section class="post-content">
+            {{content}}
+        </section>
+        {{#primary_author}}
+
+        <section class="author-card">
+            {{#if profile_image}}
+                <img class="author-profile-image" src="{{profile_image}}" alt="{{name}}" />
+            {{/if}}
+            <section class="author-card-content">
+                <p class="author-card-name mb-2"><a href="{{url}}">{{name}}</a></p>
+                {{#if bio}}
+                    <p>{{bio}}</p>
+                {{else}}
+                    <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+                {{/if}}
+            </section>
+        </section>
+
+        {{/primary_author}}
+    </article>
+
+{{/post}}

@@ -1,0 +1,211 @@
+
+// Posts Styles
+
+// Post Header
+
+.post-header {
+
+    .post-title {
+        color: $black;
+    }
+
+    .post-meta {
+        color: #9f9f9f;
+        font-size: 18px;
+        text-transform: uppercase;
+
+        a {
+            color: $medium;
+        }
+    }
+}
+
+
+// Post Content
+
+.post-content {
+    --x-height-multiplier: 0.4;
+    --baseline-multiplier: 0.18;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.7;
+    //padding: 0 20px;
+
+    @media (min-width: 768px) {
+        font-size: 21px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $black;
+        margin: 4rem auto 1.5rem;
+        max-width: 740px;
+    }
+
+    p, ul, ol {
+        max-width: 740px;
+        margin-left: auto;
+        margin-right: auto;
+
+        a {
+            color: $green;
+            font-weight: 700;
+            text-decoration: underline;
+
+            &:hover {
+                color: #00c39d;
+            }
+        }
+    }
+
+    p {
+        margin-bottom: 2rem;
+    }
+
+    ul, ol {
+        margin-bottom: 3rem;
+
+        li {
+            margin-bottom: .25rem;
+        }
+    }
+
+    blockquote {
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 3rem;
+        font-style: italic;
+        padding: 0rem 0 0rem 2rem;
+        border-left: 4px solid;
+        letter-spacing: -0.01em;
+        margin-top: 3rem;
+        line-height: 1.5;
+
+        @media (min-width: 768px) {
+            font-size: 36px;
+        }
+
+        p {
+            margin: 0;
+            max-width: 100%;
+        }
+    }
+
+    pre {
+        max-width: 740px;
+        margin: 0 auto 3rem;
+    }
+
+    figure {
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+
+        figcaption {
+            font-size: 18px;
+            margin-top: 1rem;
+            font-style: italic;
+            color: #999;
+        }
+    }
+
+    .kg-card {
+        text-align: center;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    code {
+        background-color: #f5f2f0;
+        color: #8800ce;
+        padding: 0.25em;
+
+        &[class*="language-"] {
+            color: $black;
+        }
+    }
+}
+
+// Post Author
+
+.author-card {
+    display: flex;
+    max-width: 768px;
+    margin: 0 auto;
+    border-top: 1px solid #ccc;
+    padding-top: 2rem;
+}
+
+.author-card .author-profile-image,
+.author-card .avatar-wrapper {
+    margin-right: 15px;
+    width: 80px;
+    height: 80px;
+}
+
+.author-card-name {
+    font-family: "Cerebri Sans", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    margin: 8px 0 2px 0;
+    padding: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.author-card-name a {
+    color: $black;
+}
+
+.author-card-name a:hover {
+    text-decoration: none;
+}
+
+.author-card-content p {
+    margin: 0;
+    color: $medium;
+    line-height: 1.3em;
+}
+
+.post-full-footer-right {
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+
+.author-card-button {
+    display: block;
+    padding: 9px 16px;
+    color: $medium;
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 500;
+    border-radius: 20px;
+    transition: all ease 0.2s;
+}
+
+.author-card-button:hover {
+    border-color: var(--blue);
+    color: var(--blue);
+    text-decoration: none;
+}
+
+// Color customization for posts
+
+.post.tag-machine-learning-on-code blockquote {
+    border-color: $yellow !important;
+}
+
+.post.tag-code-as-data blockquote {
+    border-color: $green !important;
+}
+
+.post blockquote {
+    border-color: $blue !important;
+}
+
+// Post Main
+
+.post-tags {
+    font-family: 'Cerebri Sans', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}

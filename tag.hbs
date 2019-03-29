@@ -1,0 +1,20 @@
+{{!--
+	A tag template for the tag archive pages. Read more about it in https://themes.ghost.org/docs/templates
+--}}
+
+{{!< default}}
+
+{{#tag}}
+	<div class="tag-page-data mt-5 mb-3">
+        <p class="mb-0">You're looking at all the posts published under the tag</p>
+        <h2 class="text-dark">{{name}}</h2>
+	</div>
+{{/tag}}
+
+<div class="post-feed row">
+    {{#foreach posts}}
+        {{> "post-card"}}
+    {{/foreach}}
+
+    {{pagination}}
+</div>

@@ -1,0 +1,122 @@
+
+// Cards styles
+
+// Main card styles
+
+.card.text-white {
+    border: none;
+}
+
+.post-card .card {
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    *,
+    *:hover {
+        text-decoration: none;
+    }
+
+    .card-intro {
+        color: $yellow;
+    }
+
+    .reading-time {
+        color: $light;
+        float: right;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+}
+
+// Post Card Images
+
+.post-card-image {
+    width: auto;
+    height: 240px;
+    background: #c5d2d9 no-repeat 50%;
+    background-size: cover;
+    border-radius: .25rem .25rem 0 0;
+}
+
+// Author List
+
+.author-list {
+    margin: 0;
+}
+
+.author-name {
+    color: #9f9f9f;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.author-profile-image {
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+}
+
+// Post Color Customization
+
+.card-intro,
+.post-tags a {
+    color: $yellow;
+}
+
+.post.tag-machine-learning-on-code {
+
+    .post-card-image {
+        //background: #f15f5f !important;
+        //background: -moz-linear-gradient(45deg, #f15f5f 0%, #f89c30 100%) !important;
+        //background: -webkit-linear-gradient(45deg, #f15f5f 0%,#f89c30 100%) !important;
+        //background: linear-gradient(45deg, #f15f5f 0%,#f89c30 100%) !important;
+        //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f15f5f', endColorstr='#f89c30',GradientType=1 ) !important;
+    }
+
+    .card-intro,
+    .post-tags a {
+        color: $yellow;
+    }
+}
+
+.post.tag-code-as-data {
+
+    .post-card-image {
+        //background: #00b491 !important;
+        //background: -moz-linear-gradient(-45deg, #00b491 0%, #0174b0 100%) !important;
+        //background: -webkit-linear-gradient(-45deg, #00b491 0%,#0174b0 100%) !important;
+        //background: linear-gradient(135deg, #00b491 0%,#0174b0 100%) !important;
+        //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b491', endColorstr='#0174b0',GradientType=1 ) !important;
+    }
+
+    .card-intro,
+    .post-tags a {
+        color: $green;
+    }
+}
+
+// Featured Post
+
+.col-sm-6.featured {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+}
+
+.post-card.post.featured .card {
+    background: #f15f5f !important;
+    background: -moz-linear-gradient(45deg, #f15f5f 0%, #f89c30 100%) !important;
+    background: -webkit-linear-gradient(45deg, #f15f5f 0%,#f89c30 100%) !important;
+    background: linear-gradient(45deg, #f15f5f 0%,#f89c30 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f15f5f', endColorstr='#f89c30',GradientType=1 ) !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+    * {
+        color: $white !important;
+    }
+
+    .post-card-image-link {
+        display: none;
+    }
+}

@@ -1,0 +1,16 @@
+<div class="container mt-5">
+    <nav class="pagination justify-content-center" role="navigation">
+        <ul class="pagination">
+            {{#if next}}
+            <li class="page-item">
+                <a class="btn btn-highlight page-link" href="{{page_url next}}" tabindex="-1">&larr; Older Posts</a>
+            </li>
+            {{/if}}
+            {{#if prev}}
+            <li class="page-item">
+                <a class="btn btn-highlight page-link" href="{{page_url prev}}">Newer Posts &rarr;</a>
+            </li>
+            {{/if}}
+        </ul>
+    </nav>
+</div>

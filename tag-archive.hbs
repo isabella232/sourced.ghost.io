@@ -1,0 +1,37 @@
+{{!--
+	A tag template for the tag archive pages. Read more about it in https://themes.ghost.org/docs/templates
+--}}
+
+{{!< default}}
+
+{{#tag}}
+	<div class="tag-page-data mt-5 mb-3">
+        <h2 class="text-dark mb-3">{{name}}</h2>
+        <div class="btn-group">
+            <p class="py-2 mr-3">Show posts:</p>
+            <div class="dropdown show">
+                <a class="btn dropdown-toggle" href="#" role="button" data-flip="false" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    All
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    {{#get 'tags' limit='all' include='count.posts' order='count.posts desc'}}
+                        {{#foreach tags}}
+                            <a class="dropdown-item" href='{{url}}'>
+                                {{ name }} <small>({{ count.posts }})</small>
+                            </a>
+                        {{/foreach}}
+                    {{/get}}
+                </div>
+            </div>
+        </div>
+	</div>
+{{/tag}}
+
+<div class="post-feed row">
+    {{#foreach posts}}
+        {{> "post-card"}}
+    {{/foreach}}
+
+    {{pagination}}
+</div>

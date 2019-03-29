@@ -1,0 +1,20 @@
+{{!--
+    This is the standard template for a list of posts. It is used by default for the home page and subsequent pages of blog posts. Read more about it in https://themes.ghost.org/docs/templates
+--}}
+
+{{!< default}}
+
+<div class="post-feed row">
+    {{#get "posts" filter="featured:true" limit="all" as |featured|}}
+        {{#foreach featured}}
+            {{> "post-card"}}
+        {{/foreach}}
+    {{/get}}
+    {{#foreach posts}}
+        {{^if featured}}
+            {{> "post-card"}}
+        {{/if}}
+    {{/foreach}}
+
+    {{pagination}}
+</div>
