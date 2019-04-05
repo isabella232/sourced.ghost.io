@@ -7,7 +7,7 @@ This repo gathers source{d} Ghost Theme configuration instructions, depedent ass
 
 - To update the source{d} Ghost Theme, the entire [ghost-theme directory](https://github.com/src-d/sourced.ghost.io/tree/master/ghost-theme) should be ziped and uploaded/updated on Ghost -> Settings -> Design.
 
-- The [docs directory](https://github.com/src-d/sourced.ghost.io/tree/master/docs/README.md) has the assets that are depentents on source{d} Landing, in order to brand-wise comply with the current/updated Landing Identity, [Landing's External Dependents](https://github.com/src-d/landing/blob/master/CONTRIBUTING.md#external-dependents) must be talen into cosideration.
+- The [docs directory](https://github.com/src-d/sourced.ghost.io/tree/master/docs/README.md) has the assets that are depentents on source{d} Landing, in order to brand-wise comply with the current/updated Landing Identity, [Landing's External Dependents](https://github.com/src-d/landing/blob/master/CONTRIBUTING.md#external-dependents) must be taken into cosideration.
 
 - You can find Ghost Theme Settings Instructions on [ghost-settigns directory](https://github.com/src-d/sourced.ghost.io/tree/master/ghost-settings/README.md).
 
