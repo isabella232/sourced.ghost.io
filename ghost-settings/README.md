@@ -1,6 +1,6 @@
 ## source{d} Ghost Theme Settings
 
-Code injection Configurationn of Ghost Settings
+Code injection Configuration of Ghost Settings
 
 ### Site Header
 
