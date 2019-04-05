@@ -10,6 +10,12 @@ This directory has the assets that are depentents on source{d} Landing, in order
 - [Icons](https://github.com/src-d/sourced.ghost.io/tree/master/docs/icons)
 - [Fonts](https://github.com/src-d/sourced.ghost.io/tree/master/docs/fonts)
 
+### Landing homologous Assets
+
+- [Images](https://github.com/src-d/landing/tree/master/static/img)
+- [Icons](https://github.com/src-d/landing/tree/master/static/icomoon)
+- [Fonts](https://github.com/src-d/landing/tree/master/static/fonts)
+
  
 
 
