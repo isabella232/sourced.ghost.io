@@ -11,7 +11,7 @@ This repo gathers source{d} Ghost Theme configuration instructions, depedent ass
 
 - You can find Ghost Theme Settings Instructions on [ghost-settigns directory](https://github.com/src-d/sourced.ghost.io/tree/master/ghost-settings/README.md).
 
-- Current source{d} Ghost Theme Styles are defined [on this directory](https://github.com/src-d/sourced.ghost.io/tree/master/assets/scss) and use some of Landign's Styles, mainly of the Header & Footer. You can find bellow some forward thinking on this matter.
+- Current source{d} Ghost Theme Styles are defined [on this directory](https://github.com/src-d/sourced.ghost.io/ghost-theme/assets/scss) and use some of Landign's Styles, mainly of the Header & Footer. You can find bellow some forward thinking on this matter.
 
 ### Considerations
 
