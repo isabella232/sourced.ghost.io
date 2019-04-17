@@ -1,7 +1,7 @@
 
 ## source{d} Ghost Theme Docs
 
-This directory has the assets that are depentents on source{d} Landing, in order to brand-wise comply with the current/updated Landing Identity, [Landing's External Dependents](https://github.com/src-d/landing/blob/master/CONTRIBUTING.md#external-dependents) must be talen into cosideration.
+This directory has the assets that depend on source{d} Landing, in order to brand-wise comply with the current/updated Landing Identity, [Landing's External Dependents](https://github.com/src-d/landing/blob/master/CONTRIBUTING.md#external-dependents) must be taken into consideration.
 
 
 ### Files
